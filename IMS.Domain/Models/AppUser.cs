@@ -1,6 +1,9 @@
-﻿namespace IMS.Domain.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace IMS.Domain.Models
 {
-    public class AppUser
+    public class AppUser : IdentityUser
     {
+
     }
 }
