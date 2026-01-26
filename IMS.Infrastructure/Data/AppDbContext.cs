@@ -22,8 +22,8 @@ namespace IMS.Infrastructure.Data
             optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;" +
                 "Initial Catalog=AppDb;Integrated Security=True; " +
                 "TrustServerCertificate=True;");
-            optionsBuilder.ConfigureWarnings(w =>
-            w.Ignore(RelationalEventId.PendingModelChangesWarning));
         }
+
+        public DbSet<Profile> Profiles { get; set; }
     }
 }

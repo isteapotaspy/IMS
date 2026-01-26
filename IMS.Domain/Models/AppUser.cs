@@ -4,6 +4,7 @@ namespace IMS.Domain.Models
 {
     public class AppUser : IdentityUser
     {
-
+        public required Profile Profile { get; set; }
     }
+
 }
