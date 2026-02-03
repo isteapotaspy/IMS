@@ -25,5 +25,6 @@ namespace IMS.Infrastructure.Data
         }
 
         public DbSet<Profile> Profiles { get; set; }
+        public DbSet<Programs> Programs { get; set; }
     }
 }
